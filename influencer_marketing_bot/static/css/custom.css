@@ -1,0 +1,137 @@
+/* Custom styles for Influencer Marketing Bot */
+
+/* Card hover effects */
+.influencer-card {
+    transition: all 0.3s ease;
+}
+
+.influencer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-indigo-600 text-white;
+    @apply hover:bg-indigo-700;
+    @apply focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.btn-secondary {
+    @apply bg-gray-200 text-gray-700;
+    @apply hover:bg-gray-300;
+    @apply focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+}
+
+/* Custom badge styles */
+.badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+    @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-danger {
+    @apply bg-red-100 text-red-800;
+}
+
+/* Custom chart styles */
+.chart-container {
+    @apply bg-white p-4 rounded-lg shadow;
+    min-height: 300px;
+}
+
+/* Custom table styles */
+.table-hover tr:hover {
+    @apply bg-gray-50;
+}
+
+/* Custom form styles */
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm;
+    @apply focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700;
+}
+
+/* Custom alert styles */
+.alert {
+    @apply rounded-md p-4 mb-4;
+}
+
+.alert-info {
+    @apply bg-blue-50 text-blue-700;
+}
+
+.alert-success {
+    @apply bg-green-50 text-green-700;
+}
+
+.alert-warning {
+    @apply bg-yellow-50 text-yellow-700;
+}
+
+.alert-danger {
+    @apply bg-red-50 text-red-700;
+}
+
+/* Custom modal styles */
+.modal-backdrop {
+    @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity;
+}
+
+.modal-content {
+    @apply inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full;
+}
+
+/* Custom loading spinner */
+.spinner {
+    @apply animate-spin rounded-full h-5 w-5 border-b-2 border-indigo-600;
+}
+
+/* Custom tooltip */
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.300') theme('colors.gray.100');
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+    .desktop-hidden {
+        display: none;
+    }
+} 
